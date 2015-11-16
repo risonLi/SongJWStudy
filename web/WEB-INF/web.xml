@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- 设置应用程序名称-->
+    <display-name>Hello My JSP!</display-name>
+
+    <!-- 这里修改session的失效时间10分钟-->
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+    <!--&lt;!&ndash; 添加config配置信息&ndash;&gt;
+    <servlet>
+        &lt;!&ndash; name可以自定义&ndash;&gt;
+        <servlet-name>config</servlet-name>
+        &lt;!&ndash; jsp-file为指定config_object目录下的jsp文件&ndash;&gt;
+        <jsp-file>/config_object/config.jsp</jsp-file>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>rison</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>123</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        &lt;!&ndash; 这里需要和上面的servlet-name对应&ndash;&gt;
+        <servlet-name>config</servlet-name>
+        &lt;!&ndash; 进行url映射，*为通配符:config_object目录下的所有文件&ndash;&gt;
+        <url-pattern>/config_object/*</url-pattern>
+    </servlet-mapping>-->
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+    <!--<servlet>
+        <servlet-name>HelloJavaEE</servlet-name>
+        <servlet-class>HelloJavaEE</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HelloJavaEE</servlet-name>
+        <url-pattern>HelloJavaEE</url-pattern>
+    </servlet-mapping>-->
+
+</web-app>
