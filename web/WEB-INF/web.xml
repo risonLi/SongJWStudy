@@ -12,6 +12,21 @@
         <session-timeout>10</session-timeout>
     </session-config>
 
+    <!-- ********************servlet元素*********************** -->
+    <!--用于注册一个servlet，name:servlet的注册名称(随意)；class:servlet的完全限定名-->
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>servlet.HelloServlet</servlet-class>
+    </servlet>
+    <!--servlet-mapping用于映射servlet对外访问的路径-->
+    <!-- 这里的name与servlet的name要保持一致-->
+    <!-- pattern用于指定servlet对外访问路径，这里设置为/hello。类似于地址映射-->
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/Hello</url-pattern>
+    </servlet-mapping>
+    <!-- ************************************************** -->
+
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
     <!--&lt;!&ndash; 添加config配置信息&ndash;&gt;
     <servlet>
