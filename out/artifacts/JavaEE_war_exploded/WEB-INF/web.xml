@@ -20,13 +20,24 @@
     </servlet>
     <!--servlet-mapping用于映射servlet对外访问的路径-->
     <!-- 这里的name与servlet的name要保持一致-->
-    <!-- pattern用于指定servlet对外访问路径，这里设置为/hello-->
+    <!-- pattern用于指定servlet对外访问路径，这里设置为/hello。类似于地址映射-->
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/Hello</url-pattern>
     </servlet-mapping>
     <!-- ************************************************** -->
 
+    <!-- ###################Servlet实现登陆功能################### -->
+    <servlet>
+        <servlet-name>LoginServet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <!-- ####################################################### -->
+    
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
     <!--&lt;!&ndash; 添加config配置信息&ndash;&gt;
     <servlet>

@@ -27,6 +27,17 @@
     </servlet-mapping>
     <!-- ************************************************** -->
 
+    <!-- ###################Servlet实现登陆功能################### -->
+    <servlet>
+        <servlet-name>LoginServet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <!-- ####################################################### -->
+    
 <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
     <!--&lt;!&ndash; 添加config配置信息&ndash;&gt;
     <servlet>
